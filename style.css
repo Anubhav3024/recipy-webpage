@@ -1,0 +1,323 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    background:#d6c4a9; /* Added gradient background */
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #b9a993, #c1a478); /* Added gradient background */
+    padding: 1px 1px;
+    border: 2px solid  rgb(160, 144, 122);
+    border-radius: 1px ;
+    box-shadow: 5px 20px 15px rgba(198, 140, 64, 0.1);
+    height: 84px; /* Adjusted height */
+}
+
+nav{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    height: 80px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    list-style: none; /* Ensure no bullets */
+    flex-grow: 5; /* Allow ul to take remaining space */
+}
+
+nav ul li{
+    margin: 0 30px; /* Increased spacing between links */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 20px;
+    font-weight: bold; /* Made font bolder */
+    text-shadow: 2px 2px 4px rgba(52, 44, 34, 0.3); /* Added shadow effect */
+    transition: color 2s; /* Added transition effect */
+}
+
+nav ul li a:hover {
+    color: rgb(137, 112, 80); /* Change color to blue on hover */
+}
+
+.logo {
+    margin-right: 0px; /* Adjusted margin */
+}
+
+.logo img {
+    margin: 0px;
+    height:100px;
+    border-radius: 50%;
+    box-shadow: 1px  rgb(195, 180, 146); /* Adjusted image height to match navbar height */
+}
+.footer{
+    background: linear-gradient(to right, #b9a993, #c1a478); /* Added gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid  rgb(160, 144, 122);
+    border-radius: 1px ;
+    box-shadow: 5px 20px 15px rgba(198, 140, 64, 0.1);
+    font:200 bolder;
+
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: calc(100vh - 134px); /* Adjusted height to cover the main screen area */
+}
+
+#home .left {
+    flex: 1;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+.left {
+    text-align: center;
+    animation: sidefromleft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes sidefromleft {
+    0% {
+        opacity: 0%;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#home .left h1 {
+    margin-bottom: 20px; /* Added space between h1 and p */
+}
+
+#home .right {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1rem 1rem;
+  
+     
+}
+.right img{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 48%;
+    justify-content: center;
+  box-shadow: 1rem 1rem 1rem  ;
+}
+
+#recipes {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#recipes h2 {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    text-shadow:2px 2px 2px #3a3737;
+}
+
+.recipe-list {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
+
+.recipe-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0e6d2; /* Slightly darker background color */
+}
+
+.recipe .left {
+    margin-left: 15px;
+    flex: 1;
+    text-align: left;
+    border-right: 1px solid #ccc; /* Added boundary */
+    background-color: #e6d9c3; /* Slightly darker background color */
+    overflow-wrap: break-word; /* Ensure content does not overflow */
+    word-wrap: break-word; /* Ensure content does not overflow */
+    word-break: break-word; /* Ensure content does not overflow */
+
+}
+.recipe .left li{
+    list-style-type:none;
+}
+
+
+.recipe .left h3 {
+    margin-bottom: 5px; /* Gap between recipe title and ingredients section */
+}
+
+.recipe .left h4 {
+    margin-top: 10px; /* Gap between ingredients section and steps section */
+}
+
+.recipe .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6d9c3; /* Slightly darker background color */
+}
+
+.recipe img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#contact {
+    padding: 20px;
+    width: 100%;
+    height: calc(100vh - 134px); /* Full height */
+    overflow-y: auto; /* Scrollable */
+    background-color: #f5e9d7; /* Background color */
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #c1a478;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #b9a993;
+}
+
+#about {
+    background-color: #d6c4a9;
+    width: 100vw;
+    height: 100vh;
+    margin: 0rem auto;
+    padding: 1rem;
+}
+.contentbox1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;max-width: 1000vw;
+    gap: 2rem;
+}
+#about img{
+    box-shadow: .5rem .5rem .5rem;
+    transition: all .3s ease;
+}
+#about img:hover{
+    transform: scale(1.05);
+}
+
+#about h2, #about h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#about p, #about ul {
+    text-align: center;
+    list-style: none;
+    font-size: 1.3rem;
+    color: #4f4743;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links i {
+    text-decoration: none;
+    color: #4f4743;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+}
+
+social-links i:hover {
+    color: #c1a478;
+}

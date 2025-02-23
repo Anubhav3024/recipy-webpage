@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f0f0;
+        }
+        main {
+            flex: 1;
+            overflow-y: auto;
+        }
+        .contentbox {
+            min-height: 100vh; /* Ensure each section covers the full display */
+            padding: 20px;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar"> 
+                <nav>
+                    <div class="logo">
+                        <img src="th.jpeg" alt="logo" style="height: 80px; vertical-align: middle;">
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="about" class="contentbox1">
+                <img src="th.jpeg" alt="Chef Image" style="display: block; margin: 0 auto; height: 200px;border-radius: 50%;">
+                <h2 style="font-weight: bold;   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); ">About the Chef</h2>
+                <p>Chef fudu is a renowned culinary expert with over 20 years of experience in the kitchen. Known for their innovative recipes and passion for cooking, Chef fudu has won numerous awards and accolades.</p>
+                <h3>Achievements</h3>
+                <ul>
+                    <li>Winner of the Best Chef Award 2020</li>
+                    <li>Author of the bestselling cookbook "Cooking with Love"</li>
+                    <li>Featured in top culinary magazines</li>
+                </ul>
+                <h3>Follow the Chef</h3>
+                <ul class="social-links">
+                   <li><i class='bx bxl-instagram-alt'></i></li>
+                   <li><i class='bx bxl-facebook-circle'></i></li>
+                   <li><i class='bx bxl-twitter'></i></li>
+                </ul>
+            </div>
+            <div id="contact" class="contentbox">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Copy right &copy; 2020</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

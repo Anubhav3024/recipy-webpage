@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: #d6c4a9; /* Ensure background color is the same */
+        }
+        .container {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+            overflow-y: auto; /* Make the page scrollable */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar"> 
+                <nav>
+                    <div class="logo">
+                        <img src="th.jpeg" alt="logo" style="height: 80px; vertical-align: middle;">
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="recipes" class="contentbox">
+                <h2>Recipes</h2>
+                <div class="recipe">
+                    <div class="left">
+                        <h3>Recipe 1: Chocolate Cake</h3>
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>2 cups flour</li>
+                            <li>1 cup sugar</li>
+                            <li>1/2 cup cocoa powder</li>
+                            <li>1 tsp baking powder</li>
+                            <li>1/2 tsp salt</li>
+                            <li>1 cup milk</li>
+                            <li>1/2 cup vegetable oil</li>
+                            <li>2 eggs</li>
+                            <li>1 tsp vanilla extract</li>
+                        </ul>
+                        <h4>Steps:</h4>
+                        <ol>
+                            <li>Preheat oven to 350°F (175°C).</li>
+                            <li>In a large bowl, mix flour, sugar, cocoa powder, baking powder, and salt.</li>
+                            <li>Add milk, vegetable oil, eggs, and vanilla extract. Mix until smooth.</li>
+                            <li>Pour batter into a greased baking pan.</li>
+                            <li>Bake for 30-35 minutes or until a toothpick inserted into the center comes out clean.</li>
+                            <li>Let cool before serving.</li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <img src="choclatecake.jpeg" alt="Chocolate Cake" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="recipe">
+                    <div class="left">
+                        <h3>Recipe 2: Spaghetti Carbonara</h3>
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>200g spaghetti</li>
+                            <li>100g pancetta</li>
+                            <li>2 large eggs</li>
+                            <li>50g pecorino cheese</li>
+                            <li>50g parmesan</li>
+                            <li>2 plump garlic cloves</li>
+                            <li>50g unsalted butter</li>
+                            <li>Salt and black pepper</li>
+                        </ul>
+                        <h4>Steps:</h4>
+                        <ol>
+                            <li>Cook the spaghetti in a large pot of boiling salted water until al dente.</li>
+                            <li>Fry the pancetta with the garlic until the pancetta is golden and crisp.</li>
+                            <li>Beat the eggs in a bowl, then add the grated cheeses and mix well.</li>
+                            <li>Drain the spaghetti and add it to the pancetta. Remove from heat.</li>
+                            <li>Quickly pour in the egg and cheese mixture, stirring vigorously.</li>
+                            <li>Serve immediately with extra grated cheese and black pepper.</li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <img src="11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.webp" alt="Spaghetti Carbonara" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="recipe">
+                    <div class="left">
+                        <h3>Recipe 3: Chicken Curry</h3>
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>1 kg chicken</li>
+                            <li>2 onions</li>
+                            <li>3 tomatoes</li>
+                            <li>2 tbsp ginger-garlic paste</li>
+                            <li>1 tsp turmeric powder</li>
+                            <li>2 tsp chili powder</li>
+                            <li>2 tsp coriander powder</li>
+                            <li>1 tsp garam masala</li>
+                            <li>Salt to taste</li>
+                            <li>Fresh coriander leaves</li>
+                        </ul>
+                        <h4>Steps:</h4>
+                        <ol>
+                            <li>Heat oil in a pan and sauté onions until golden brown.</li>
+                            <li>Add ginger-garlic paste and sauté for a minute.</li>
+                            <li>Add tomatoes and cook until soft.</li>
+                            <li>Add turmeric, chili powder, coriander powder, and salt. Cook for a few minutes.</li>
+                            <li>Add chicken pieces and cook until they are no longer pink.</li>
+                            <li>Add water and simmer until the chicken is cooked through.</li>
+                            <li>Sprinkle garam masala and garnish with fresh coriander leaves.</li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <img src="chicken-curry-v0-jmaxqltde85c1.webp" alt="Chicken Curry" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="recipe">
+                    <div class="left">
+                        <h3>Recipe 4: Beef Stroganoff</h3>
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>500g beef fillet</li>
+                            <li>1 onion</li>
+                            <li>200g mushrooms</li>
+                            <li>2 tbsp flour</li>
+                            <li>300ml beef stock</li>
+                            <li>150ml sour cream</li>
+                            <li>2 tbsp Dijon mustard</li>
+                            <li>Salt and black pepper</li>
+                            <li>Fresh parsley</li>
+                        </ul>
+                        <h4>Steps:</h4>
+                        <ol>
+                            <li>Slice the beef into thin strips and season with salt and pepper.</li>
+                            <li>Heat oil in a pan and cook the beef until browned. Remove and set aside.</li>
+                            <li>In the same pan, sauté onions and mushrooms until soft.</li>
+                            <li>Sprinkle flour and cook for a minute.</li>
+                            <li>Add beef stock and bring to a boil, stirring constantly.</li>
+                            <li>Reduce heat and add sour cream and mustard. Stir well.</li>
+                            <li>Return the beef to the pan and simmer for a few minutes.</li>
+                            <li>Garnish with fresh parsley and serve.</li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <img src="360_F_885341591_qFnIqbbV5XRvGXBlhmsa5KQlTH0roG1c.webp" alt="Beef Stroganoff" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="recipe">
+                    <div class="left">
+                        <h3>Recipe 5: Vegetable Stir Fry</h3>
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>1 red bell pepper</li>
+                            <li>1 yellow bell pepper</li>
+                            <li>1 green bell pepper</li>
+                            <li>1 carrot</li>
+                            <li>1 broccoli</li>
+                            <li>2 tbsp soy sauce</li>
+                            <li>1 tbsp oyster sauce</li>
+                            <li>1 tsp sesame oil</li>
+                            <li>2 garlic cloves</li>
+                            <li>Salt and black pepper</li>
+                        </ul>
+                        <h4>Steps:</h4>
+                        <ol>
+                            <li>Cut all the vegetables into thin strips.</li>
+                            <li>Heat oil in a wok and sauté garlic until fragrant.</li>
+                            <li>Add all the vegetables and stir fry on high heat for a few minutes.</li>
+                            <li>Add soy sauce, oyster sauce, and sesame oil. Mix well.</li>
+                            <li>Season with salt and black pepper to taste.</li>
+                            <li>Serve hot with steamed rice or noodles.</li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <img src="veg ryf.webp" alt="Vegetable Stir Fry" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="recipe">
+                    <div class="left">
+                        <h3>Recipe 6: Pancakes</h3>
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>1 cup flour</li>
+                            <li>2 tbsp sugar</li>
+                            <li>1 tsp baking powder</li>
+                            <li>1/2 tsp baking soda</li>
+                            <li>1/2 tsp salt</li>
+                            <li>1 cup buttermilk</li>
+                            <li>1 egg</li>
+                            <li>2 tbsp melted butter</li>
+                            <li>1 tsp vanilla extract</li>
+                        </ul>
+                        <h4>Steps:</h4>
+                        <ol>
+                            <li>In a bowl, mix flour, sugar, baking powder, baking soda, and salt.</li>
+                            <li>In another bowl, whisk buttermilk, egg, melted butter, and vanilla extract.</li>
+                            <li>Pour the wet ingredients into the dry ingredients and mix until just combined.</li>
+                            <li>Heat a non-stick pan and pour 1/4 cup of batter for each pancake.</li>
+                            <li>Cook until bubbles form on the surface, then flip and cook until golden brown.</li>
+                            <li>Serve with maple syrup and fresh fruits.</li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <img src="pancakes-with-banana-walnut-and-caramel.webp" alt="Pancakes" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Copy right &copy; 2020</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
